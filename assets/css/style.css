@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Gilroy_bold';
+    src: url(../font/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy_heavy';
+    src: url(../font/Gilroy-Heavy.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy_light';
+    src: url(../font/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy_medium';
+    src: url(../font/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy_regular';
+    src: url(../font/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Konexy_personal';
+    src: url(../font/KonexyPersonalUse.otf);
+}
+/* navbar */
+.span_1_rotate {
+    transition: all 600ms linear;
+    margin-top: 10px;
+    transform: rotate(45deg);
+}
+
+.span_2_rotate {
+    transition: all 600ms linear;
+    display: none;
+}
+
+.span_3_rotate {
+    transition: all 600ms linear;
+    margin-top: -7px;
+    transform: rotate(-45deg);
+}
+/* hero section */
+.custome_container {
+    max-width: 1440px !;
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    height: 35px;
+    width: 1px;
+    position: absolute;
+    right: -20px;
+    background-color: #888888;
+    top: 2px;
+}
+
+.blue_line {
+    position: relative;
+}
+
+.blue_line::after {
+    content: "";
+    width: 5px;
+    height: 180px;
+    position: absolute;
+    background: var(--purple06, #6022EA);
+    top: 20px;
+    left: -20px;
+}
+/* back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.animat_topbtn {
+    animation: topbtn 3s linear 0.1s infinite forwards;
+}
+
+@keyframes topbtn {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch
+ */

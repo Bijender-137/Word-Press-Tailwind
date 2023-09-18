@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+
+    <!-- slick min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick theam min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- <div
+    id="preloder"
+    class="h-screen fixed top-0 start-0 flex justify-center items-center w-full bg-black z-40"
+  >
+
+    <h1 class="font-bold text-6xl text-white">Waiting...</h1>
+  </div> -->
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        class="animat_topbtn"
+        width="50px"
+        src="./assets/img/png/back_top.png"
+        alt=""
+      />
+    </button>
+    <!-- nav-bar -->
+    <header class="bg-black">
+      <nav class="py-8">
+        <div class="container custome_container px-5 mx-auto">
+          <div class="flex items-center justify-end">
+            <ul
+              id="Nav-Bar"
+              class="flex items-center xl:ps-32 fixed right-[-100%] duration-500 top-0 xl:static flex-col xl:flex-row bg-black min-w-full min-h-screen xl:min-h-fit z-20 justify-center gap-5 xl:justify-end"
+            >
+              <li>
+                <a href="#" class="flex items-center"
+                  ><span
+                    class="text-yellow-50 font-gilroyRegular font-normal fs-[16px]"
+                    >WordPress Solution</span
+                  >
+                  <span
+                    ><svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.8789 9.29297L12.5859 13.586L8.29294 9.29297L6.87894 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center"
+                  ><span
+                    class="text-yellow-50 font-gilroyRegular font-normal fs-[16px]"
+                    >Services</span
+                  >
+                  <span
+                    ><svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.8789 9.29297L12.5859 13.586L8.29294 9.29297L6.87894 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center"
+                  ><span
+                    class="text-yellow-50 font-gilroyRegular font-normal fs-[16px]"
+                    >Portfolio</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center"
+                  ><span
+                    class="text-yellow-50 font-gilroyRegular font-normal fs-[16px]"
+                    >About</span
+                  >
+                  <span
+                    ><svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.8789 9.29297L12.5859 13.586L8.29294 9.29297L6.87894 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center"
+                  ><span
+                    class="text-yellow-50 font-gilroyRegular font-normal fs-[16px]"
+                    >Blog</span
+                  >
+                </a>
+              </li>
+              <div class="gap-5 flex-col flex items-center xl:hidden">
+                <li>
+                  <a
+                    target="_blank"
+                    href="tel:+1 888 266-6917 (eu?)"
+                    class="font-gilroyRegular font-normal text-yellow-50"
+                    >1 888 266-6917 (eu?)</a
+                  >
+                </li>
+                <li class="line after:hidden after:xl:block xl:ms-7">
+                  <button
+                    class="bg-blue-600 text-white rounded-full py-2 px-6 hover:bg-white hover:text-[black] transition-all duration-300"
+                  >
+                    Contact Us
+                  </button>
+                </li>
+                <li class="xl:ps-10 flex items-center">
+                  <img src="./assets/img/svg/nav_victor.svg" alt="nav_victor" />
+                  <a href="#" class="text-white ms-1 flex"
+                    >Eng
+                    <span class="ps-1"
+                      ><svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.8789 9.29297L12.5859 13.586L8.29294 9.29297L6.87894 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </div>
+            </ul>
+            <ul class="xl:ps-36 gap-5 flex items-center hidden xl:flex">
+              <li>
+                <a
+                  target="_blank"
+                  href="tel:+1 888 266-6917 (eu?)"
+                  class="font-gilroyRegular whitespace-nowrap font-normal text-yellow-50"
+                  >1 888 266-6917 (eu?)</a
+                >
+              </li>
+              <li class="line after:hidden after:xl:block xl:ms-7">
+                <button
+                  class="bg-[#6022EA] text-white rounded-full py-2 px-6 whitespace-nowrap  hover:bg-white hover:text-[black] transition-all duration-300"
+                >
+                  Contact Us
+                </button>
+              </li>
+              <li class="xl:ps-10 flex items-center">
+                <img src="./assets/img/svg/nav_victor.svg" alt="nav_victor" />
+                <a href="#" class="text-white ms-1 flex"
+                  >Eng
+                  <span class="ps-1"
+                    ><svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.8789 9.29297L12.5859 13.586L8.29294 9.29297L6.87894 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div
+              onclick="openNav()"
+              class="h-[10px] ms-4 flex flex-col gap-1 z-30 xl:hidden"
+            >
+              <span class="border-white border-2 w-[30px]" id="span_1"></span>
+              <span class="border-white border-2 w-[30px]" id="span_2"></span>
+              <span class="border-white border-2 w-[30px]" id="span_3"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero-section -->
+    <section
+      class="bg-black pt-[25px] xl:pt-[107px] pb-[45px] xl:pb-[149px] overflow-x-hidden"
+    >
+      <div class="container custome_container px-5 mx-auto">
+        <div class="flex flex-wrap">
+          <div class="lg:w-2/4 w-full text-center sm:text-start">
+            <h2
+              class="text-[30px] sm:text-[45px] md:text-[50px] xl:text-[72px] text-white font-Personal sm:leading-[45px] md:leading-[50px] xl:leading-[72px] blue_line after:lg:block after:hidden"
+            >
+              WordPress Development Agency
+            </h2>
+            <p
+              class="font-gilroyBold font-bold text-white text-[24px] pt-4 xl:pt-7"
+            >
+              for Enterprise + Friendly Team
+            </p>
+            <p
+              class="font-gilroyRegular font-normal text-[16px] text-white xl:max-w-xl pt-4 xl:pt-5 lg:pe-6 xl:pe-0"
+            >
+              Vipe Studio is a WordPress Agency for development - a long-term
+              partner for any WordPress service. Websites and,online shops
+              development, maintenance and customization is what we do best.
+            </p>
+            <div class="pt-6 sm:flex text-center items-center">
+              <button
+                class="text-white bg-[#6022EA] rounded-full px-20 sm:px-10 py-3  hover:bg-white hover:text-[black] transition-all duration-300"
+              >
+                Get Started
+              </button>
+              <div
+                class="flex items-center justify-center mt-5 sm:mt-0 sm:justify-start"
+              >
+                <div class="sm:ms-7">
+                  <a href="#"
+                    ><img
+                      class="max-w-[32px]"
+                      src="./assets/img/svg/play_btn.svg"
+                      alt="play_btn"
+                  /></a>
+                </div>
+                <p
+                  class="font-gilroyRegular font-normal text-[16px] text-[#B2B2B2] ms-3"
+                >
+                  What is Vipe? (1min)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-2/4 relative xl:translate-x-12 mt-8 xl:mt-0">
+            <div
+              class="max-w-[187px] h-[187px] bg-[#6022EA] blur-[100px] absolute"
+            ></div>
+            <img
+              class="w-full lg:hidden"
+              src="./assets/img/png/hero_group.png"
+              alt="group_img"
+            />
+            <img
+              class="w-full h-full hidden lg:block"
+              src="./assets/img/png/hero_sec_img.png"
+              alt="hero_img"
+            />
+            <img
+              class="hidden lg:block z-10 absolute bottom-12 left-4 xl:max-w-[228px]"
+              src="./assets/img/png/star_img_hero.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tell-us-more -->
+    <section class="bg-[#0F0E11] mt-[-5px]">
+      <div class="container custome_container px-5 mx-auto">
+        <div class="flex flex-wrap py-10 lg:py-16">
+          <div class="lg:w-2/4 w-full text-center lg:text-start">
+            <div class="">
+              <h2 class="font-Personal text-[36px] font-normal text-white">
+                Tell us more....
+              </h2>
+              <p
+                class="text-white font-gilroyRegular font-normal text-[16px] pe-4"
+              >
+                Lectus vitae est ultrices sed. Sit aliquam commodo hac donec
+                augue in quis. Magna vel orci sem neque fringilla et lectus
+                laoreet.
+              </p>
+            </div>
+          </div>
+          <div class="lg:w-2/4 w-full lg:ps-20 mt-5 lg:mt-0">
+            <div class="w-10/12/12 flex items-center bg-[#272628] rounded-full">
+              <input
+                class="w-full outline-none rounded-full border-[1px solid rgba(255, 255, 255, 0.10)] ps-8 py-5 text-[#BFBEBF] bg-[#272628]"
+                type="text"
+                placeholder="What do you need assistance with?"
+              />
+              <div class="pe-5 ms-2">
+                <img
+                  class="cursor-pointer"
+                  src="./assets/img/svg/search.svg"
+                  alt="search"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:pt-3 items-center"
+            >
+              <div class="flex items-center mt-3 sm:mt-0">
+                <img
+                  class="cursor-pointer"
+                  src="./assets/img/svg/circel.svg"
+                  alt="circel"
+                />
+                <p
+                  class="font-gilroyRegular font-normal text-white ms-2 text-[16px] whitespace-nowrap"
+                >
+                  or send us an inquire?
+                </p>
+              </div>
+              <p
+                class="font-gilroyRegular text-white font-normal mt-2 sm:mt-0 fs-[16px]"
+              >
+                Learn more about...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured on -->
+    <section class="bg-[#F6F6F6]">
+      <div class="container custome_container px-5 mx-auto">
+        <div class="pt-20 pb-14">
+          <h2
+            class="font-Personal font-normal text-black text-[28px] md:text-[48px]"
+          >
+            Featured on
+          </h2>
+        </div>
+        <div class="slider_2 pb-20">
+          <div class="px-5">
+            <div class="max-w-[171px]">
+              <img
+                class="w-full"
+                src="./assets/img/svg/yaho_1.svg"
+                alt="yahoo"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="max-w-[171px]">
+              <img
+                class="w-full"
+                src="./assets/img/svg/yaho_2.svg"
+                alt="yahoo"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="max-w-[171px]">
+              <img
+                class="w-full"
+                src="./assets/img/svg/yaho_3.svg"
+                alt="yahoo"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="max-w-[171px]">
+              <img
+                class="w-full"
+                src="./assets/img/svg/yaho_4.svg"
+                alt="yahoo"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="max-w-[171px]">
+              <img
+                class="w-full"
+                src="./assets/img/svg/yaho_5.svg"
+                alt="yahoo"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="max-w-[171px]">
+              <img
+                class="w-full"
+                src="./assets/img/svg/yaho_4.svg"
+                alt="yahoo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- integeret -->
+    <section class="bg-[#FEFEFE]">
+      <div class="container custome_container px-5 mx-auto pb-12 lg:pb-32">
+        <div class="mt-10 lg:mt-16">
+          <h2
+            class="font-Personal text-[28px] sm:text-[35px] md:text-[40px] lg:text-[48px] font-normal text-black text-center lg:text-start"
+          >
+            Integer et nisl non
+          </h2>
+          <div class="flex flex-wrap mt-6 lg:mt-11 justify-center">
+            <div class="lg:w-1/3 md:w-1/2 px-4">
+              <div
+                class="border border-[1px solid rgba(0, 0, 0, 0.10)] rounded-xl pt-[60px] pb-[38px] bg-[#FFFFFF] hover:shadow-[0_20px_60px_0_#E5E9F6] px-7 text-center h-full transition-all duration-300"
+              >
+                <img
+                  class="max-w-[70px] mx-auto"
+                  src="./assets/img/svg/img_1.svg"
+                  alt="logo_1"
+                />
+                <p
+                  class="font-inter font-semibold text-black text-[24px] pt-10"
+                >
+                  Enterprise WordPress <span class="lg:block"></span>
+                  Solutions
+                </p>
+                <p
+                  class="text-[#4D4D4D] font-gilroyRegular font-normal text-[16px] leading-6 mt-4"
+                >
+                  Pretium, a et sapien non nunc libero. Id dolor sed quis
+                  convallis turpis purus feugiat nibh eu. Auctor cras hac ac,
+                  sociis diam montes, turpis commodo elit.
+                </p>
+                <p
+                  class="cursor-pointer text-[#6022EA] font-gilroyRegular font-semibold text-[16px] pt-5"
+                >
+                  Learn More
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 px-4 mt-4 md:mt-0">
+              <div
+                class="border border-[1px solid rgba(0, 0, 0, 0.10)] rounded-xl pt-[60px] pb-[38px] bg-[#FFFFFF] hover:shadow-[0_20px_60px_0_#E5E9F6] px-7 text-center h-full transition-all duration-300"
+              >
+                <img
+                  class="max-w-[70px] mx-auto"
+                  src="./assets/img/svg/img_2.svg"
+                  alt="logo_2"
+                />
+                <p
+                  class="font-inter font-semibold text-black text-[24px] pt-10"
+                >
+                  Small to Mid Size Business Development
+                </p>
+                <p
+                  class="text-[#4D4D4D] font-gilroyRegular font-normal text-[16px] leading-6 mt-4"
+                >
+                  Et nunc fermentum id amet tempus, elementum. Eget ac ultrices
+                  tortor, mattis amet blandit aenean amet. Massa diam lacus,
+                  aliquam neque, cursus.
+                </p>
+                <p
+                  class="cursor-pointer text-[#6022EA] font-gilroyRegular font-semibold text-[16px] pt-5"
+                >
+                  Learn More
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 px-4 mt-4 md:mt-8 lg:mt-0">
+              <div
+                class="border border-[1px solid rgba(0, 0, 0, 0.10)] rounded-xl pt-[60px] pb-[38px] bg-[#FFFFFF] px-7 text-center h-full hover:shadow-[0_20px_60px_0_#E5E9F6] transition-all duration-300"
+              >
+                <img
+                  class="max-w-[70px] mx-auto"
+                  src="./assets/img/svg/img_3.svg"
+                  alt="logo_3"
+                />
+                <p
+                  class="font-inter font-semibold text-black text-[24px] pt-10"
+                >
+                  Support & Maintenance
+                </p>
+                <p
+                  class="text-[#4D4D4D] font-gilroyRegular font-normal text-[16px] leading-6 mt-4"
+                >
+                  Ac donec ipsum fringilla tortor, consectetur etiam sociis amet
+                  quis. Viverra volutpat pretium non in fusce tellus sed urna.
+                  Pharetra ullamcorper et donec aliquam.
+                </p>
+                <p
+                  class="cursor-pointer text-[#6022EA] font-gilroyRegular font-semibold text-[16px] pt-5"
+                >
+                  Learn More
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- wipe studio -->
+    <section class="bg-black">
+      <div class="container custome_container px-5 mx-auto pt-16">
+        <div class="flex flex-wrap pb-16 xl:pb-[166px]">
+          <div class="xl:w-5/12">
+            <h2
+              class="font-Personal text-[28px] sm:text-[40px] font-normal text-white"
+            >
+              All Vipe Studio WordPress services include:
+            </h2>
+          </div>
+          <div class="xl:w-7/12 w-full">
+            <div class="flex flex-wrap lg:justify-between">
+              <div class="sm:w-6/12 mt-6 xl:mt-0">
+                <div>
+                  <p
+                    class="text-white font-gilroyRegular font-semibold text-[24px]"
+                  >
+                    By Industry
+                  </p>
+                  <div class="flex items-center pt-4 xl:pt-6">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Lorem in elementum pellentesque
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Molestie cursus praesent mi
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Leo sed viverra cras
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Laoreet feugiat ut at
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Risus aliquam molestie viverra
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Diam enim pulvinar velit
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="sm:w-5/12 mt-6 xl:mt-0">
+                <div>
+                  <p
+                    class="text-white font-gilroyRegular font-semibold text-[24px]"
+                  >
+                    By Services
+                  </p>
+                  <div class="flex items-center pt-4 xl:pt-6">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Accumsan, dui a semper
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] whitespace-nowrap text-white ps-[10px]"
+                    >
+                      Interdum malesuada vulputate neque
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Nullam non a, morbi
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Arcu morbi leo eu
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Viverra venenatis, in ornare
+                    </p>
+                  </div>
+                  <div class="flex items-center pt-3">
+                    <img
+                      class="max-w--[24px]"
+                      src="./assets/img/svg/right_icon.svg"
+                      alt="right_icon"
+                    />
+                    <p
+                      class="font-gilroyRegular font-normal text-[16px] text-white ps-[10px]"
+                    >
+                      Erat id aliquam habitant
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black rounded-3xl pb-16">
+          <div
+            class="flex flex-wrap w-full md:justify-center px-4 lg:px-6 py-7"
+          >
+            <div class="md:w-6/12 xl:w-4/12">
+              <h2
+                class="font-Personal font-normal text-[28px] md:text-[35px] xl:max-w-[324px] text-white"
+              >
+                Not Sure which service you need yet?
+              </h2>
+              <button
+                class="pt-[10px] pb-[10px] px-6 bg-[#6022EA] rounded-full text-white mt-4 lg:mt-10  hover:bg-white hover:text-[black] transition-all duration-300"
+              >
+                Schedule An Appointment
+              </button>
+            </div>
+            <div class="md:w-6/12 xl:w-4/12 flex justify-end">
+              <div class="mt-5 md:mt-0">
+                <p class="font-gilroyRegular font-bold text-white text-[24px]">
+                  20-m free consultation that will
+                  <span class="lg:block"></span> help us identifyif you need
+                </p>
+                <div class="flex items-center pt-6">
+                  <img src="./assets/img/svg/svg_icon.svg" alt="right" />
+                  <p
+                    class="font-gilroyRegular font-normal text-[16px] text-white ps-2"
+                  >
+                    Technical Description & Discovery
+                  </p>
+                </div>
+                <div class="flex items-center pt-4">
+                  <img src="./assets/img/svg/svg_icon.svg" alt="right" />
+                  <p
+                    class="font-gilroyRegular font-normal text-[16px] text-white ps-2"
+                  >
+                    Technical Description & Discovery
+                  </p>
+                </div>
+                <div class="flex items-center pt-4">
+                  <img src="./assets/img/svg/svg_icon.svg" alt="right" />
+                  <p
+                    class="font-gilroyRegular font-normal text-[16px] text-white ps-2"
+                  >
+                    Technical Description & Discovery
+                  </p>
+                </div>
+                <div class="flex items-center pt-4">
+                  <img src="./assets/img/svg/svg_icon.svg" alt="right" />
+                  <p
+                    class="font-gilroyRegular font-normal text-[16px] text-white ps-2"
+                  >
+                    Technical Description & Discovery
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-6/12 xl:w-4/12">
+              <div class="lg:max-w-[331px] md:ml-auto mt-10 xl:mt-0">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/girl_img.png"
+                  alt="girl_img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- long-term -->
+    <section class="bg-[#F6F6F6]">
+      <div class="container custome_container px-5 mx-auto">
+        <div class="pt-14">
+          <h2
+            class="font-Personal font-normal text-[26px] sm:text-[35px] lg:text-[48px] max-w-[638px]"
+          >
+            Long Term WordPress Partner
+          </h2>
+          <p
+            class="font-gilroyRegular font-normal text-[16px] text-[#313131] max-w-[693px] mt-5"
+          >
+            Our motto is the long-term partnership – we will not only develop
+            your perfect website, but will be behind you through the whole
+            process. They already trusted us:
+          </p>
+          <div class="slider items-center mt-10 pb-[72px]">
+            <div class="px-5">
+              <div class="max-w-[180px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/long_team_1.png"
+                  alt="propy"
+                />
+              </div>
+            </div>
+            <div class="px-5">
+              <div class="max-w-[162px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/long_team_2.png"
+                  alt="propy"
+                />
+              </div>
+            </div>
+            <div class="px-5">
+              <div class="max-w-[191px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/long_team_3.png"
+                  alt="propy"
+                />
+              </div>
+            </div>
+            <div class="px-5">
+              <div class="max-w-[161px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/long_team_4.png"
+                  alt="propy"
+                />
+              </div>
+            </div>
+            <div class="px-5">
+              <div class="max-w-[170px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/long_team_5.png"
+                  alt="propy"
+                />
+              </div>
+            </div>
+            <div class="px-5">
+              <div class="max-w-[162px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/long_team_6.png"
+                  alt="propy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- agile wordpress -->
+    <section>
+      <div class="container custome_container px-5 mx-auto">
+        <div
+          class="flex flex-wrap pt-16 items-center w-full pb-16 xl:pb-[110px]"
+        >
+          <div class="lg:w-5/12">
+            <div class="lg:max-w-[610px] md:mx-auto">
+              <img
+                class="w-full"
+                src="./assets/img/png/agile_img.png"
+                alt="agile_img"
+              />
+            </div>
+          </div>
+          <div class="lg:w-7/12">
+            <div class="lg:ps-16 text-center mt-6 lg:mt-0 lg:text-start">
+              <h2
+                class="font-Personal font-normal text-[20px] sm:text-[32px] md:text-[35px] lg:text-[38px] xl:text-[48px] text-black"
+              >
+                <span class="text-[#6022EA]">Agile WordPress</span> Development
+                Project management
+              </h2>
+              <p
+                class="text-[#4C4C4C] font-gilroyRegular font-normal text-[16px] pt-3 lg::max-w-[572px]"
+              >
+                Suspendisse consequat egestas arcu et et. Viverra quis euismod
+                neque luctus bibendum. Fringilla in nibh fringilla vulputate in.
+                Elit, ultricies vitae pulvinar arcu dignissim ac non rutrum.
+                Lacus tortor sollicitudin risus eget euismod in bibendum turpis.
+              </p>
+              <button
+                class="font-gilroyRegular font-semibold text-[16px] text-white pt-[10px] pb-[10px] px-6 bg-[#6022EA] rounded-full mt-8 hover:shadow-[0px_4px_20px_0px]  hover:bg-white hover:text-[black] transition-all duration-300"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- full stars -->
+    <section class="bg-[#F6F6F6]">
+      <div class="container custome_container px-5 mx-auto pt-10 pb-16">
+        <div class="flex flex-wrap items-center flex-col-reverse lg:flex-row">
+          <div class="lg:w-1/2">
+            <div class="text-center lg:text-start mt-6 lg:mt-0 lg:pt-10">
+              <h2 class="font-Personal text-[28px] lg:text-[48px]">
+                Team Full of Stars
+              </h2>
+              <p
+                class="font-gilroyRegular font-normal text-[16px] text-black lg:max-w-[476px]"
+              >
+                Suspendisse consequat egestas arcu et et. Viverra quis euismod
+                neque luctus bibendum. Fringilla in nibh fringilla vulputate in.
+                Elit, ultricies vitae pulvinar arcu dignissim ac non rutrum.
+                Lacus tortor sollicitudin risus eget euismod in bibendum turpis.
+              </p>
+              <button
+                class="font-gilroyRegular font-semibold text-[16px] text-white pt-[10px] pb-[10px] px-6 bg-[#6022EA] rounded-full mt-8 hover:shadow-[0px_4px_20px_0px]  hover:bg-white hover:text-[black] transition-all duration-300"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="lg:translate-y-[120px]">
+              <div class="max-w-[686px]">
+                <img
+                  class="w-full"
+                  src="./assets/img/png/team_img.png"
+                  alt="team_img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- success-guide -->
+    <section>
+      <div
+        class="container custome_container px-5 mx-auto pt-16 lg:pt-[168px] xl:pt-[180px]"
+      >
+        <div class="flex flex-wrap justify-center items-center">
+          <div class="xl:w-4/12 mx-auto xl:mx-0">
+            <div class="max-w-[394px]">
+              <img
+                class="w- full"
+                src="./assets/img/png/succuss_img.png"
+                alt="succuss_img"
+              />
+            </div>
+          </div>
+          <div class="xl:w-8/12">
+            <div class="ps-4 mt-6 xl:mt-0 text-center xl:text-start">
+              <h2
+                class="font-gilroyRegular font-normal text-[16px] text-[#868687]"
+              >
+                HAVE YOU SEEN OUR MASCOT?
+              </h2>
+              <p
+                class="font-Personal text-[28px] lg:text-[48px] text-black font-normal"
+              >
+                Success Guides
+              </p>
+              <div class="mt-5">
+                <div class="flex flex-col items-center justify-center sm:flex-row xl:justify-start">
+                  <div class="flex items-center">
+                    <div>
+                      <button
+                        class="py-2 px-4 border border-[1px] border-[#6022EA] font-gilroyRegular font-semibold text-[16px] rounded-full text-[#6022EA] focus:bg-[#6022EA] focus:text-white transition-all duration-500"
+                      >
+                        Category-1
+                      </button>
+                    </div>
+                    <div class="ps-[10px]">
+                      <button
+                        class="py-2 px-4 border border-[1px] border-[#6022EA] font-gilroyRegular font-semibold text-[16px] rounded-full text-[#6022EA] focus:bg-[#6022EA] focus:text-white transition-all duration-500"
+                      >
+                        Category-2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex items-center mt-4 sm:mt-0">
+                    <div class="sm:ps-[10px]">
+                      <button
+                        class="py-2 px-4 border border-[1px] border-[#6022EA] font-gilroyRegular font-semibold text-[16px] rounded-full text-[#6022EA] focus:bg-[#6022EA] focus:text-white transition-all duration-500"
+                      >
+                        Category-3
+                      </button>
+                    </div>
+                    <div class="ps-[10px]">
+                      <button
+                        class="py-2 px-4 border border-[1px] border-[#6022EA] font-gilroyRegular font-semibold text-[16px] rounded-full text-[#6022EA] focus:bg-[#6022EA] focus:text-white transition-all duration-500"
+                      >
+                        Category-4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap mt-8 justify-center">
+                <div class="md:w-1/2 lg:w-4/12 px-3">
+                  <div
+                    class="border border-[1px solid #0000001C] rounded-[16px] hover:shadow-[12.11429px_48.45714px_60.57143px_0px_#E5E9F6] transition-all duration-300"
+                  >
+                    <div class="p-4">
+                      <div>
+                        <img
+                          class="w-full"
+                          src="./assets/img/png/succes_1.png"
+                          alt="succes_1"
+                        />
+                        <p
+                          class="font-gilroyRegular font-semibold text-[18px] lg:text-[24px] text-black mt-4"
+                        >
+                          Sit diam metus
+                        </p>
+                        <p
+                          class="font-gilroyRegular font-normal text-[text-\[16px\] text-black pt-[10px]"
+                        >
+                          Arcu amet, consectetur vel pellentesque mattis ipsum
+                          sed mattis sed.
+                        </p>
+                        <p
+                          class="cursor-pointer text-[#6022EA] font-gilroyRegular font-semibold text-[16px] pt-2"
+                        >
+                          Read More....
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 lg:w-4/12 px-3">
+                  <div
+                    class="border border-[1px solid #0000001C] rounded-[16px] hover:shadow-[12.11429px_48.45714px_60.57143px_0px_#E5E9F6] transition-all duration-300 mt-5 md:mt-0"
+                  >
+                    <div class="p-4">
+                      <div>
+                        <img
+                          class="w-full"
+                          src="./assets/img/png/succes_1.png"
+                          alt="succes_1"
+                        />
+                        <p
+                          class="font-gilroyRegular font-semibold text-[18px] lg:text-[24px] text-black mt-4"
+                        >
+                          Sit diam metus
+                        </p>
+                        <p
+                          class="font-gilroyRegular font-normal text-[text-\[16px\] text-black pt-[10px]"
+                        >
+                          Arcu amet, consectetur vel pellentesque mattis ipsum
+                          sed mattis sed.
+                        </p>
+                        <p
+                          class="cursor-pointer text-[#6022EA] font-gilroyRegular font-semibold text-[16px] pt-2"
+                        >
+                          Read More....
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 lg:w-4/12 px-3">
+                  <div
+                    class="border border-[1px solid #0000001C] rounded-[16px] hover:shadow-[12.11429px_48.45714px_60.57143px_0px_#E5E9F6] transition-all duration-300 mt-5 lg:mt-0"
+                  >
+                    <div class="p-4">
+                      <div>
+                        <img
+                          class="w-full"
+                          src="./assets/img/png/succes_1.png"
+                          alt="succes_1"
+                        />
+                        <p
+                          class="font-gilroyRegular font-semibold text-[18px] lg:text-[24px] text-black mt-4"
+                        >
+                          Sit diam metus
+                        </p>
+                        <p
+                          class="font-gilroyRegular font-normal text-[text-\[16px\] text-black pt-[10px]"
+                        >
+                          Arcu amet, consectetur vel pellentesque mattis ipsum
+                          sed mattis sed.
+                        </p>
+                        <p
+                          class="cursor-pointer text-[#6022EA] font-gilroyRegular font-semibold text-[16px] pt-2"
+                        >
+                          Read More....
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- liner-gradient -->
+    <section class="translate-y-16">
+      <div class="container custome_container px-5 mx-auto">
+        <div
+          class="bg-gradient-to-r from-[#5f21e9] to-[#fa00ff] rounded-2xl text-center md:text-start"
+        >
+          <div
+            class="pt-[25px] pl-[20px] lg:pl-[43px] pb-[45px] pr-[20px] lg:pr-[50px]"
+          >
+            <div class="lg:flex items-center justify-between">
+              <div>
+                <h2
+                  class="font-Personal font-normal text-[30px] md:text-[48px] text-white"
+                >
+                  Have you
+                </h2>
+                <p
+                  class="font-gilroyRegular font-semibold text-[18px] md:text-[24px] text-white pt-2"
+                >
+                  read our study about Speed and Performance in
+                  <span class="md:block"></span> WordPress?
+                </p>
+              </div>
+              <div>
+                <button
+                  class="py-3 px-9 bg-white rounded-full text-[#6022EA] font-semibold font-inter text-[16px] mt-4 lg:mt-0  hover:bg-black hover:!text-[white] transition-all duration-300"
+                >
+                  Check It Out
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="bg-black">
+      <div class="container custome_container px-5 mx-auto pt-20">
+        <div class="max-w-[381px] pt-20 ml-auto">
+          <div
+            class="flex items-center bg-white rounded-full justify-between px-6 py-2"
+          >
+            <div>
+              <input
+                class="w-full outline-none rounded-full font-gilroyRegular font-normal text-[16px] text-[#6F6F6F]"
+                type="text"
+                placeholder="Search here...."
+              />
+            </div>
+            <div>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.7"
+                  d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
+                  stroke="#313131"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap py-16">
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-3/12">
+            <div>
+              <ul>
+                <li
+                  class="font-gilroyRegular font-normal text-[16px] text-white"
+                >
+                  Services
+                </li>
+                <li class="flex items-center pt-4">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >WordPress Development</span
+                  >
+                </li>
+                <li class="flex items-center pt-4">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >WooCommerce Development</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >WordPress Maintenance</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >Speed Optimization</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >Dedicated WordPress Developer</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >Headless WordPress Development</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >White Label Development</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-3/12">
+            <div class="mt-8 sm:mt-0">
+              <ul>
+                <li
+                  class="font-gilroyRegular font-normal text-[16px] text-white"
+                >
+                  Services
+                </li>
+                <li class="flex items-center pt-4">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >WordPress Hosting</span
+                  >
+                </li>
+                <li class="flex items-center pt-4">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >PSD, XD, Figma to WordPress Conversion</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >Custom WordPress Theme</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >Custom WordPress Plugins</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >CMS to WordPress</span
+                  >
+                </li>
+                <li class="flex items-center pt-3">
+                  <span
+                    ><img src="./assets/img/svg/arrow.svg" alt="arrow"
+                  /></span>
+                  <span
+                    class="text-white ps-1 font-gilroyRegular font-normal text-[14px]"
+                    >WordPress Malware Removal</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sm:w-full md:w-1/2 lg:w-3/12">
+            <div class="lg:flex justify-end mt-8 lg:mt-0">
+              <ul>
+                <li
+                  class="font-gilroyRegular font-normal text-white text-[16px]"
+                >
+                  Latest Articles
+                </li>
+                <li
+                  class="font-gilroyRegular font-normal text-[14px] text-white pt-4"
+                >
+                  7 WordPress Plugins to Create an
+                  <span class="md:block"></span> Effective Newsletter 03.01.2022
+                </li>
+                <li
+                  class="font-gilroyRegular font-normal text-white text-[14px] pt-3"
+                >
+                  What’s the Perfect Blog Post Length for
+                  <span class="md:block"></span> Your WordPress Site’s SEO?
+                  <span class="md:block"></span> 02.01.2022
+                </li>
+                <li
+                  class="font-gilroyRegular font-normal text-[14px] text-white pt-4"
+                >
+                  5 Reasons the Future of WordPress Is
+                  <span class="block"></span> Headless 01.01.2022
+                </li>
+                <li
+                  class="font-gilroyRegular font-normal text-[14px] text-white pt-4"
+                >
+                  Viptor Says: Vipe Studio’s WordPress
+                  <span class="md:block"></span> Developers Wrap Up the
+                  Amazingly <span class="md:block"></span> Successful 2021
+                  30.12.2021
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sm:w-full md:w-1/2 lg:w-3/12">
+            <div class="lg:flex justify-end mt-8 lg:mt-0">
+              <ul>
+                <li
+                  class="font-gilroyRegular font-normal text-[16px] text-white"
+                >
+                  Contact
+                </li>
+                <li class="pt-4">
+                  <a href="tel:+EU: +359 988 993 128" class="flex items-center">
+                    <span
+                      ><img src="./assets/img/svg/phn.svg" alt="phn"
+                    /></span>
+                    <span
+                      class="font-gilroyRegular font-normal text-[14px] text-white ps-2"
+                      >EU: +359 988 993 128</span
+                    >
+                  </a>
+                </li>
+                <li class="pt-5">
+                  <a href="US: +1 (1 888) 266-6917" class="flex items-center">
+                    <span
+                      ><img src="./assets/img/svg/phn.svg" alt="phn"
+                    /></span>
+                    <span
+                      class="font-gilroyRegular font-normal text-[14px] text-white ps-2"
+                      >US: +1 (1 888) 266-6917</span
+                    >
+                  </a>
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="flex items-center"
+                    href="mailto:office@vipestudio.com
+                  "
+                  >
+                    <span
+                      ><img src="./assets/img/svg/msg.svg" alt="msg"
+                    /></span>
+                    <span
+                      class="font-gilroyRegular font-normal text-[14px] text-white ps-2"
+                      >office@vipestudio.com
+                    </span></a
+                  >
+                </li>
+                <li class="pt-5">
+                  <address class="flex items-center">
+                    <span
+                      ><img src="./assets/img/svg/home.svg" alt="home"
+                    /></span>
+                    <span
+                      class="font-gilroyRegular font-normal text-[14px] text-white ps-2"
+                      >14 Srebarna, Sofia 1407, Bulgaria</span
+                    >
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2nd footer -->
+    <section class="bg-black pt-2 mt-[-2px]">
+      <div class="border border-[1px] border:bg-[#4C4C4C]"></div>
+      <div class="container custome_container px-5 mx-auto">
+        <div
+          class="md:flex justify-between items-center text-center md:text-start py-8"
+        >
+          <div>
+            <h2 class="font-gilroyRegular font-normal text-[14px] text-white">
+              © Vipe Studio 2016-2022
+            </h2>
+            <div class="flex pt-3 items-center justify-center md:justify-start">
+              <span
+                class="font-normal font-gilroyRegular text-[14px] text-white"
+                >Privacy</span
+              >
+              <span
+                class="border border-[1px white] max-w-[1px] h-[14px] mx-2"
+              ></span>
+              <span
+                class="font-normal font-gilroyRegular text-[14px] text-white"
+                >Careers</span
+              >
+              <span
+                class="border border-[1px white] max-w-[1px] h-[14px] mx-2"
+              ></span>
+              <span
+                class="font-normal font-gilroyRegular text-[14px] text-white"
+                >Media</span
+              >
+              <span
+                class="border border-[1px white] max-w-[1px] h-[14px] mx-2"
+              ></span>
+
+              <span
+                class="font-normal font-gilroyRegular text-[14px] text-white"
+                >Client Area</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-4 justify-center md:justify-start mt-6 md:mt-0"
+          >
+            <div>
+              <a target="_blank" href="https://www.github   .com/"
+                ><img class="max-w-[40px] hover:-translate-y-2 transition-all duration-300" src="./assets/img/svg/github.svg" alt="github"
+              /></a>
+            </div>
+            <div>
+              <a target="_blank" href="https://in.linkedin.com/"
+                ><img class="max-w-[40px] hover:-translate-y-2 transition-all duration-300"  src="./assets/img/svg/link.svg" alt="github"
+              /></a>
+            </div>
+            <div>
+              <a target="_blank" href="https://twitter.com/"
+                ><img class="max-w-[40px] hover:-translate-y-2 transition-all duration-300"  src="./assets/img/svg/twitter.svg" alt="github"
+              /></a>
+            </div>
+            <div>
+              <a target="_blank" href="https://facebook.com/"
+                ><img class="max-w-[40px] hover:-translate-y-2 transition-all duration-300"  src="./assets/img/svg/facebook.svg" alt="github"
+              /></a>
+            </div>
+            <div>
+              <a target="_blank" href="https://instagram.com/"
+                ><img class="max-w-[40px] hover:-translate-y-2 transition-all duration-300"  src="./assets/img/svg/insta.svg" alt="github"
+              /></a>
+            </div>
+            <div>
+              <a target="_blank" href="#"
+                ><img class="max-w-[40px] hover:-translate-y-2 transition-all duration-300"  src="./assets/img/svg/word.svg" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function openNav() {
+        document.getElementById("Nav-Bar").classList.toggle("!right-0");
+        document.getElementById("span_1").classList.toggle("span_1_rotate");
+        document.getElementById("span_2").classList.toggle("span_2_rotate");
+        document.getElementById("span_3").classList.toggle("span_3_rotate");
+        document.body.classList.toggle("overflow-hidden");
+      }
+    </script>
+    <!-- j quairy min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- slick min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- back to top -->
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- preloader -->
+    <script>
+      setTimeout(() => {
+        document.getElementById("preloder").classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }, 2000);
+    </script>
+    <!-- slider -->
+    <script>
+      $(".slider_2").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        centerPadding: "70px",
+        prevArrow: $(".left_key"),
+        nextArrow: $(".right_key"),
+        Speed: 4000,
+        responsive: [
+          {
+            breakpoint: 1280,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 968,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+    </script>
+    <script>
+      $(".slider").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        centerPadding: "70px",
+        prevArrow: $(".left_arrow"),
+        nextArrow: $(".right_arrow"),
+        Speed: 4000,
+        responsive: [
+          {
+            breakpoint: 1280,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 968,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
